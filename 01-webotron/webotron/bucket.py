@@ -28,6 +28,10 @@ class BucketManager:
         self.uploaded_files = []
         pass
 
+    def get_bucket(self, bucket_name):
+        """Get a bucket by name."""
+        return self.S3.Bucket(bucket_name)
+
     def get_region_name_for_bucket(self, bucket):
         """Get the bucket's region name"""
         bucket_location = self.S3.meta.client.get_bucket_location(Bucket=bucket.name)

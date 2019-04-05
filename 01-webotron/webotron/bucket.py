@@ -6,7 +6,7 @@ import boto3
 import mimetypes
 from pathlib import Path, PurePosixPath
 from botocore.exceptions import ClientError
-import util
+from webotron import util
 from hashlib import md5
 from pprint import pprint
 from functools import reduce

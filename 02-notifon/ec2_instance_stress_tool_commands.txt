@@ -1,0 +1,18 @@
+2-user@ip-172-31-35-96 ~]$ history
+    1  yum update -y
+    2  sudo yum update -y
+    3  sudo yum install -y httpd
+    4  sudo chkconfig httpd on
+    5  sudo service httpd start
+    6  exit
+    7  sudo yum -y install stress
+    8  sudo yum install -y stress
+    9  sudo yum install -y epel-release
+   10  sudo amazon-linux-extras install epel
+   11  sudo yum install -y stress
+   12  cls
+   13  clear
+   14  stress -c 1 -t 600&
+   15  top
+   16  %history
+   17  history

@@ -4,6 +4,7 @@
 *.pem
 *.ppk
 post_to_slack.py
+config.dev.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

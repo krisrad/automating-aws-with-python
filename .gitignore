@@ -3,6 +3,7 @@
 */Pipfile.lock
 *.pem
 *.ppk
+post_to_slack.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

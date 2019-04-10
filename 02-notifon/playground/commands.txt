@@ -25,3 +25,19 @@ $ serverless create --template aws-python3 --name notifon-notifier
 $ serverless deploy
 $ serverless invoke -f hello
 $ serverless logs -f hello
+
+
+-- slack setup
+curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://hooks.slack.com/services/.../..../......
+
+Steps:
+1. Create a slack channel
+2. create an app in slack and activate incoming webhooks feature
+3. create webhook url to a channel.
+4. Post messages to channel by sending http request to the above webhook url and send json data
+
+import requests
+url = 'https://hooks.slack.com/services/...../...../.....'
+data = {"text": "Hello World. This is RK."}
+requests.post(url, json=data)
+

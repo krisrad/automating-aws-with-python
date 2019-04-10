@@ -25,7 +25,7 @@ $ serverless create --template aws-python3 --name notifon-notifier
 $ serverless deploy
 $ serverless invoke -f hello
 $ serverless logs -f hello
-
+$ serverless plugin install -n serverless-python-requirements
 
 -- slack setup
 curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://hooks.slack.com/services/.../..../......

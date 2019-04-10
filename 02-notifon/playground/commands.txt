@@ -21,3 +21,7 @@
 
    
 -- serverless commands
+$ serverless create --template aws-python3 --name notifon-notifier
+$ serverless deploy
+$ serverless invoke -f hello
+$ serverless logs -f hello
